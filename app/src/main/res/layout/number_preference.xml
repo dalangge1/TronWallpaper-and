@@ -7,35 +7,40 @@
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:gravity="center_vertical"
     android:paddingRight="?android:attr/scrollbarSize">
-    
+
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dip"
+        android:layout_marginStart="15dip"
         android:layout_marginRight="16dip"
+        android:layout_marginEnd="16dip"
         android:layout_marginTop="6dip"
         android:layout_marginBottom="6dip"
         android:layout_weight="1">
         <TextView
-        	android:id="@+android:id/dialogMessage"
+        	android:id="@+id/dialogMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@android:id/title"
             android:layout_alignLeft="@android:id/title"
+            android:layout_alignStart="@android:id/title"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:maxLines="2" />
 		<SeekBar
-			android:id="@+android:id/myBar"
+			android:id="@+id/myBar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@android:id/dialogMessage"
-            android:layout_alignLeft="@android:id/dialogMessage" />
+            android:layout_below="@id/dialogMessage"
+            android:layout_alignLeft="@id/dialogMessage"
+            android:layout_alignStart="@id/dialogMessage" />
         <TextView
-        	android:id="@+android:id/actualValue"
+        	android:id="@+id/actualValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@android:id/myBar"
-            android:layout_alignLeft="@android:id/myBar"
+            android:layout_below="@id/myBar"
+            android:layout_alignLeft="@id/myBar"
+            android:layout_alignStart="@id/myBar"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:maxLines="1" />
     </RelativeLayout>
