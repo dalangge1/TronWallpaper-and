@@ -1,5 +1,19 @@
-bin
-gen
-.project
-.classpath
-.settings
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+
+#built application files
+*.apk
+*.ap_
+
+captures/*.alloc
+.idea/modules.xml
+.idea/codeStyleSettings.xml
+.idea/misc.xml
+.idea/compiler.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
